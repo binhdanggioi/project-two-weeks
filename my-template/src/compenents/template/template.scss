@@ -1,0 +1,58 @@
+.template{
+  max-width: 1184px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 65px;
+  padding: 3rem 6rem 3rem 6rem;
+  background-color: #F7F8F9;
+  &__intro{
+    display: block;
+    &--text{
+      color:#505256;
+      font-size: 17px;
+      line-height: 30px;
+      margin-bottom: 0;
+    }
+  }
+  &__button{
+    display: flex;
+    align-items: flex-end;
+  }
+  &__button>button{
+    background-color: black;
+    color: white;
+    height: 55px;
+    padding: 1rem;
+    position: relative;
+    outline: none;
+    width: 220px;
+    border:none;
+    border-radius: 65px;
+  }
+  &__button>button>span{
+    padding: 0 4rem 0 0;
+    margin-bottom: 2rem;
+  }
+  &__button>button>a {
+    padding-right: 5rem;
+    color:white;
+  }
+  &__button> button:hover{
+    border: none;
+    background-color: black;
+  }
+  &__button > svg {
+    width: 20px;
+    position: absolute;
+    right:17%;
+    bottom: 21%;
+    height: 20px;
+    cursor: pointer;
+  }
+}
+input[type="button"]{
+  outline: none;
+}

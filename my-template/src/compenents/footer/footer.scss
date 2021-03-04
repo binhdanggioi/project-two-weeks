@@ -1,0 +1,28 @@
+.footer{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  &__menu{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+    justify-content: space-between;
+    & > ul > li.header {
+      list-style: none;
+      font-weight: 500;
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+      & > a{
+      }
+    }
+    & > ul > li.title {
+      list-style: none;
+      margin-bottom: 0.5rem;
+      & > a {
+        color: #505256;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.tool{
+  padding-top: 7.5rem;
+  padding-bottom: 12rem;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  &__text > h2{
+    text-align: center;
+    font-size: 32px;
+    max-width: 42rem;
+    margin: 0 auto 4rem auto;
+  }
+  &__card{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    //flex-wrap: wrap;
+  }
+}
+.tool__card--design-diamond{
+  border-radius: 12px;
+  border: 1px solid red;
+  padding:0.5rem;
+  max-width: 95%;
+  img{
+    margin-bottom: 1rem;
+    width: auto;
+    height: 2.5rem;
+  }
+  a{
+    font-weight: 500;
+    position: relative;
+  }
+  a > svg {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 5%;
+    left: 8rem;
+  }
+}
+.design {
+  font-size: 26px;
+  line-height: 40px;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.intro{
+  font-size: 17px;
+  line-height: 30px;
+  color:#505256;
+  margin-bottom: 1.5rem;
+  padding-right: 1.5rem;
+}
+.dev{
+  font-size: 17px;
+  line-height: 30px;
+  color:#505256;
+  margin-bottom: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+.tool__card--design-react{
+  border-radius: 12px;
+  border: 1px solid green;
+  padding:0.5rem;
+  width: 100%;
+  img{
+    margin-bottom: 1rem;
+    width: auto;
+    height: 2.5rem;
+  }
+  a{
+    font-weight: 500;
+    position: relative;
+  }
+  a > svg {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 5%;
+    left: 7.5rem;
+  }
+}
