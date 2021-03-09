@@ -1,5 +1,5 @@
 import React from 'react';
-import {Layout, Menu} from 'antd';
+import {Layout} from 'antd';
 import './header.scss';
 import 'antd/dist/antd.css';
 
@@ -19,10 +19,10 @@ function HeaderLayout() {
                         </div>
                         <div className="header__menu">
                             <ul className="header__menu--right">
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Github</a></li>
-                                <li><a href="#">For Designers</a></li>
-                                <li className="header__menu--grey"><a href="#">Documentation</a></li>
+                                <li><a href="ttps://atomizecode.com/">Features</a></li>
+                                <li><a href="ttps://atomizecode.com/">Github</a></li>
+                                <li><a href="ttps://atomizecode.com/">For Designers</a></li>
+                                <li className="header__menu--grey"><a href="ttps://atomizecode.com/">Documentation</a></li>
                             </ul>
                         </div>
                     </div>

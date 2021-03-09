@@ -12,7 +12,7 @@ function Template() {
                 </div>
                 <div className="template__button">
                     <button shape="round">
-                        <a href="#">Get notified</a>
+                        <a href="ttps://atomizecode.com/">Get notified</a>
                     </button>
                     <svg viewBox="0 0 24 24">
                         <path fill="#FFFFFF"

@@ -2,6 +2,7 @@
   width: 80%;
   margin: 0 auto;
   padding-top: 8rem;
+  padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
   &__menu{
@@ -22,6 +23,28 @@
       margin-bottom: 0.5rem;
       & > a {
         color: #505256;
+      }
+    }
+  }
+  &__contact{
+    display: flex;
+    flex-direction: column;
+    & > h2 {
+      font-size: 14px;
+      text-align: center;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 1rem;
+    }
+    &--link{
+      text-align: center;
+      margin: 0 auto;
+      a{
+        padding-right: 1rem;
+      }
+      .icon{
+        width: 1.3rem;
+        height: 1.3rem;
       }
     }
   }

@@ -7,6 +7,8 @@ import Statistical from "../statistical";
 import Template from "../template";
 import Tool from "../tooldesign";
 import FooterLayout from "../footer";
+import Features from "../features";
+import Simulation from "../simulation";
 
 function Base() {
     return (
@@ -14,6 +16,8 @@ function Base() {
             <div className="base">
             <HeaderLayout />
             <Intro />
+            <Simulation />
+            <Features />
             <Tool />
             <Statistical />
             <Template />
