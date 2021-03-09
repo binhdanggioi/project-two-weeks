@@ -1,0 +1,94 @@
+.features{
+  width: 95%;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  margin: 0 auto;
+  & > span {
+    background: black;
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size:12px;
+    font-weight: 500;
+    border-radius: 1000rem;
+  }
+  & > p.features__use{
+    margin-top: 2rem!important;
+    font-size: 32px;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  & > p.features__help{
+    margin-bottom: 3rem;
+    font-size: 17px;
+    max-width: 30rem;
+    color: #505256;
+  }
+  &__attribute{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &--flex{
+      border-radius: 12px;
+      border: 1px solid red;
+      margin-right: 1rem;
+      display: flex;
+      flex-direction: column;
+      img{
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+      }
+      a{
+        font-weight: 500;
+        position: relative;
+      }
+      a > svg {
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        top: 5%;
+        left: 8rem;
+      }
+    }
+  }
+}
+.gutter-row{
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+.design {
+  font-size: 22px;
+  line-height: 32px;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+.intro{
+  font-size: 17px;
+  line-height: 30px;
+  color:#505256;
+  margin-bottom: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media only screen and (max-device-width: 736px) {
+  .features__attribute{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    &--flex{
+      padding: 0!important;
+    }
+    &> .responsive {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+  .ant-col-6 {
+    display: block!important;
+    max-width: 95% !important;
+    margin-left: 0.6rem!important;
+    margin-bottom: 1rem!important;
+  }
+}
