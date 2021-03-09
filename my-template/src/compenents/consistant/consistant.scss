@@ -1,0 +1,20 @@
+.consistants{
+    width: 85%;
+    margin: 0 auto;
+    .powered > h2{
+        max-width: 32rem;
+        font-size: 40px;
+        text-align: left;
+        line-height: 48px;
+    }
+    .powered__list{
+        margin: 3rem 0 3rem 0;
+        h3 {
+            margin-top: 1rem;
+        }
+        p {
+            color: #505256;
+        }
+    }
+    
+}
