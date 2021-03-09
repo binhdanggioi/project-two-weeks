@@ -9,6 +9,7 @@ import Tool from "../tooldesign";
 import FooterLayout from "../footer";
 import Features from "../features";
 import Simulation from "../simulation";
+import Consistants from '../consistant';
 
 function Base() {
     return (
@@ -17,6 +18,7 @@ function Base() {
             <HeaderLayout />
             <Intro />
             <Simulation />
+            <Consistants />
             <Features />
             <Tool />
             <Statistical />
