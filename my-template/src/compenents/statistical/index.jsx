@@ -3,27 +3,43 @@ import 'antd/dist/antd.css';
 import './statistical.scss';
 
 function Statistical() {
+
+    const data = [
+        {
+            id: 1,
+            title: "15+",
+            content: "Ready to use React Components",
+        },
+        {
+            id: 2,
+            title: "60+",
+            content: "Predefined colors for theme setup",
+        },
+        {
+            id: 3,
+            title: `</>`,
+            content: "Detailed documentation for each component",
+        },
+        {
+            id: 4,
+            title: "FREE",
+            content: "Open source with regular updates",
+        },
+    ];
+
+    const lists = data.map((list) => {
+        return (
+            <div key={list.id} className="statistical__wrap--data">
+                        <h1>{list.title}</h1>
+                        <p>{list.content}</p>
+            </div>
+        )
+    })
+
     return(
         <>
             <div className="statistical">
-                <div className="statistical__wrap">
-                    <div className="statistical__wrap--data">
-                        <h1>15+</h1>
-                        <p>Ready to use React Components</p>
-                    </div>
-                    <div className="statistical__wrap--data">
-                        <h1>60+</h1>
-                        <p>Predefined colors for theme setup</p>
-                    </div>
-                    <div className="statistical__wrap--data">
-                        <h1>&lt;/&gt;</h1>
-                        <p>Detailed documentation for each component</p>
-                    </div>
-                    <div className="statistical__wrap--data">
-                        <h1>FREE</h1>
-                        <p>Open source with regular updates</p>
-                    </div>
-                </div>
+                <div className="statistical__wrap">{lists}</div>
             </div>
         </>
     );

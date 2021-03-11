@@ -13,11 +13,6 @@ function Consistants() {
         <div className="consistants">
             <Row>
                 <Col span={10} style={{border:"2px solid #ccc"}}>
-                    {/* <div style={{border: "2px solid #000",width:'300px',height:'300px',margin:'1rem',marginTop:'10rem',paddingBottom: '10rem',borderRadius:'1000%'}}>
-                        <div style={{border: "2px solid #00FFFF",width:'300px',height:'300px',margin:'5rem',padding: '5rem',borderRadius:'1000%'}}>
-                            <div style={{border: "2px solid #3366FF",margin:'1rem',padding: '1rem',borderRadius:'1000%'}}>2</div>
-                        </div>
-                    </div> */}
                     <Row justify="space-around" align="middle">
                     <Col span={4}>
                         <DemoBox value={50}>col-4</DemoBox>

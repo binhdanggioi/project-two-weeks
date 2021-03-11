@@ -92,3 +92,9 @@
     margin-bottom: 1rem!important;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .features__attribute--flex{
+    margin-right: 0;
+  }
+}

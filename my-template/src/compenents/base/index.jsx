@@ -18,8 +18,8 @@ function Base() {
             <HeaderLayout />
             <Intro />
             <Simulation />
-            <Consistants />
             <Features />
+            <Consistants />
             <Tool />
             <Statistical />
             <Template />

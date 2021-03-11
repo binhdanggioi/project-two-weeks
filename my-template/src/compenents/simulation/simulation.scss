@@ -123,3 +123,36 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .simulation{
+    flex-wrap: wrap;
+    max-width: 90%;
+    .btn__large{
+      margin: 1rem 1.1rem 2rem 0.4rem;
+    }
+  }
+  .simulation__info{
+    width: 100%;
+  }
+  .simulation__info--button{
+    display: flex;
+    flex-direction: row;
+  }
+  .simulation__info--avatar{
+    .btn__interactive{
+      .btn{
+        padding-right: 5rem;
+      }
+    }
+  }
+  .simulation__represent{
+    display: none;
+  }
+  .simulation__login{
+    width: 100%;
+    p {
+      text-align: center;
+    }
+  }
+}

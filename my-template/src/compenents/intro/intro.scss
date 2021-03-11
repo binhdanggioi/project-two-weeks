@@ -13,6 +13,7 @@
   }
   &__h2{
     text-align: center;
+    color: #505256;
     font-weight: 400;
     font-size: 17px;
     max-width: 36rem;
@@ -36,6 +37,26 @@
       color: #505256;
       font-weight: 600;
       border-radius: 0.6rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .introduce > h1 {
+    font-size: 44px;
+  }
+  .introduce__getting{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    .introduce__getting--started > button {
+      width: 100%;
+      margin: 3rem 1rem 1rem 0;
+    }
+    .introduce__getting--watch > button {
+      width: 100%;
+      margin: 0 0 1rem 0;
     }
   }
 }

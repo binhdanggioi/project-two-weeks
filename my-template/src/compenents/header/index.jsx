@@ -9,7 +9,7 @@ function HeaderLayout() {
     return (
         <>
             <Layout>
-                <Header style={{backgroundColor: 'white'}}>
+                <Header style={{backgroundColor: 'white',position: 'sticky'}}>
                     <div className="header">
                         <div className="header__logo">
                             <a href="https://atomizecode.com/">
