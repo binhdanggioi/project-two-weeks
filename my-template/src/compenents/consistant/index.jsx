@@ -12,14 +12,14 @@ function Consistants() {
         <>
         <div className="consistants">
             <Row>
-                <Col span={10} style={{border:"2px solid #ccc"}}>
+                <Col className="consistants__round" span={10} style={{border:"2px solid #ccc"}}>
                     <Row justify="space-around" align="middle">
                     <Col span={4}>
                         <DemoBox value={50}>col-4</DemoBox>
                     </Col>
                     </Row>
                 </Col>
-                <Col span={14} className="powered">
+                <Col  gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="powered">
                     <h2>Beautiful & consistant UI powered with <span style={{color:'#06d7ff'}}>React</span></h2>
                     <Row className="powered__list">
                         <Col span={8}>

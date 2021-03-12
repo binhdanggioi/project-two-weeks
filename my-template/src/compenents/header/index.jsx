@@ -2,6 +2,9 @@ import React from 'react';
 import {Layout} from 'antd';
 import './header.scss';
 import 'antd/dist/antd.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const {Header} = Layout;
 
@@ -17,12 +20,36 @@ function HeaderLayout() {
                                 IgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1NiAtMjcpIi8+Cjwvc3ZnPgo=" alt=""/>
                             </a>
                         </div>
+
+                        {/*mobile*/}
+                        <label for="mobile-input" className="menu__btn">
+                            <FontAwesomeIcon className="icon__bars" icon={faBars}/>
+                        </label>
+
+                        <input type="checkbox" hidden className="input__mobile" id="mobile-input"  />
+
+                        <label for="mobile-input" className="overlay"></label>
+
+                        <div className="header__menu-mobile">
+                            <label for="mobile-input" className="close__btn">
+                                <FontAwesomeIcon className="icon__close" icon={faTimes}/>
+                            </label>
+                            <ul className="header__menu--list">
+                                <li><a className="header__menu--link" href="https://atomizecode.com/">Features</a></li>
+                                <li><a className="header__menu--link" href="https://atomizecode.com/">Github</a></li>
+                                <li><a className="header__menu--link" href="https://atomizecode.com/">For Designers</a></li>
+                                <li className="header__menu--grey"><a className="header__menu--link btn" href="https://atomizecode.com/">Documentation</a></li>
+                            </ul>
+                        </div>
+
+                        {/*end mobile*/}
+
                         <div className="header__menu">
                             <ul className="header__menu--right">
-                                <li><a href="ttps://atomizecode.com/">Features</a></li>
-                                <li><a href="ttps://atomizecode.com/">Github</a></li>
-                                <li><a href="ttps://atomizecode.com/">For Designers</a></li>
-                                <li className="header__menu--grey"><a href="ttps://atomizecode.com/">Documentation</a></li>
+                                <li><a href="https://atomizecode.com/">Features</a></li>
+                                <li><a href="https://atomizecode.com/">Github</a></li>
+                                <li><a href="https://atomizecode.com/">For Designers</a></li>
+                                <li className="header__menu--grey"><a href="https://atomizecode.com/">Documentation</a></li>
                             </ul>
                         </div>
                     </div>
