@@ -10,19 +10,21 @@ import FooterLayout from "../footer";
 import Features from "../features";
 import Simulation from "../simulation";
 import Consistants from '../consistant';
+import Highlight from '../highlight';
 
 function Base() {
     return (
             <div className="base">
-             <HeaderLayout />
-            <Intro />
-            <Simulation />
-            <Features />
-            <Consistants />
-            <Tool />
-            <Statistical />
-            <Template />
-            <FooterLayout />
+                <HeaderLayout />
+                <Intro />
+                <Simulation />
+                <Features />
+                <Consistants />
+                <Highlight />
+                <Tool />
+                <Statistical />
+                <Template />
+                <FooterLayout />
             </div>
     );
 }

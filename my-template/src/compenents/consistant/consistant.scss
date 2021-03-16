@@ -1,6 +1,9 @@
 .consistants{
     width: 85%;
     margin: 5rem auto;
+    .powered {
+        width: 50%;
+    }
     .powered > h2{
         max-width: 32rem;
         font-size: 40px;
@@ -20,5 +23,8 @@
 @media only screen and (max-width: 736px) {
     .consistants__round{
         display: none;
+    }
+    .powered{
+        width: 100%!important;
     }
 }

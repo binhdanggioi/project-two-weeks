@@ -10,15 +10,15 @@ const DemoBox = props => <p className={`height-${props.value}`}>{props.children}
 function Consistants() {
     return (
         <div className="consistants">
-            <Row>
-                <Col className="consistants__round" span={10} style={{border:"2px solid #ccc"}}>
+            <Row style={{display:'flex',flexDirection: 'row'}}>
+                <Col className="consistants__round" span={12} style={{border:"2px solid #ccc"}}>
                     <Row justify="space-around" align="middle">
                     <Col span={4}>
                         <DemoBox value={50}>col-4</DemoBox>
                     </Col>
                     </Row>
                 </Col>
-                <Col  gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="powered">
+                <Col gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="powered">
                     <h2>Beautiful & consistant UI powered with <span style={{color:'#06d7ff'}}>React</span></h2>
                     <Row className="powered__list">
                         <Col span={8}>
@@ -42,8 +42,8 @@ function Consistants() {
                             <p>Ever-increasing list of components.</p>
                         </div>
                         </Col>
-                    </Row>
-                    <Row className="powered__list">
+                    {/* </Row>
+                    <Row className="powered__list"> */}
                         <Col span={8}>
                             <div>
                                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjRkZGIi8+CiAgICA8cGF0aCBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik0xNi4xOTk0MjI4LDE0LjM4NjM2MzYgTDE5LjY3NjgzODIsMTAuOTA4OTQ4MiBMMTcuOTcyMDcxMywxMC45MDg5NDgyIEwxNy45NzIwNzEzLDguOTA4OTQ4MjEgTDIxLjA5MTA1MTgsOC45MDg5NDgyMSBMMjMuMDkxMDUxOCw4LjkwODk0ODIxIEwyMy4wOTEwNTE4LDEzLjY3NjA2NSBMMjEuMDkxMDUxOCwxMy42NzYwNjUgTDIxLjA5MTA1MTgsMTIuMzIzMTYxOCBMMTcuNjEzNjM2NCwxNS44MDA1NzcyIEwxNy42MTM2MzY0LDMwIEwyMS44NTI4MTI5LDMwIEwyMS44NTI4MTI5LDMyIEw3LDMyIEMzLjEzNDAwNjc1LDMyIDAsMjguODY1OTkzMiAwLDI1IEwwLDExLjc3OTIxOTQgTDIsMTEuNzc5MjE5NCBMMiwxNC4zODYzNjM2IEwxNi4xOTk0MjI4LDE0LjM4NjM2MzYgWiBNMTMsLTMuOTY0ODI4NDdlLTEyIEwxMywyIEw4LDIgTDgsLTMuOTY0ODI4NDdlLTEyIEwxMywtMy45NjQ4Mjg0N2UtMTIgWiBNMjEsLTMuOTY0ODI4NDdlLTEyIEwyMSwyIEwxNiwyIEwxNiwtMy45NjQ4Mjg0N2UtMTIgTDIxLC0zLjk2NDgyODQ3ZS0xMiBaIE0yOS4zMTIwNjYsMi4wMTgwOTY2NCBMMjcuOTgzNTg5NiwzLjUxMzEzODYgQzI2Ljg5MjY5OTMsMi41NDM3ODY1MiAyNS40ODk5MjcsMiAyNCwyIEwyNCwtMy45NjQ4Mjg0N2UtMTIgQzI1Ljk4NDQwMTIsLTMuOTY0ODI4NDdlLTEyIDI3Ljg1ODU0MzEsMC43MjY1MTM1NjggMjkuMzEyMDY2LDIuMDE4MDk2NjQgWiBNMzIsMTAuMDczNTkzNSBMMzAsMTAuMDczNTkzNSBMMzAsOCBDMzAsNy4xNjEwMzAxNCAyOS44MjgyOTgsNi4zNDc5OTgwOSAyOS40OTk5NTQ5LDUuNTk3NTU1ODcgTDMxLjMzMjI0NzQsNC43OTU4Njc3MyBDMzEuNzcwNjgxOCw1Ljc5NzkyODIxIDMyLDYuODgzNzgwNDcgMzIsOCBMMzIsMTAuMDczNTkzNSBaIE0zMiwxOC4wNzM1OTM1IEwzMCwxOC4wNzM1OTM1IEwzMCwxMy4wNzM1OTM1IEwzMiwxMy4wNzM1OTM1IEwzMiwxOC4wNzM1OTM1IFogTTMxLjY1MDk0OCwyNi4zNDM2NTQ3IEwyOS43Mzg0Nzg5LDI1Ljc1ODQ1MjIgQzI5LjkxMTE4NywyNS4xOTQwMzQxIDMwLDI0LjYwMzU1NTYgMzAsMjQgTDMwLDIxLjA3MzU5MzUgTDMyLDIxLjA3MzU5MzUgTDMyLDI0IEMzMiwyNC44MDI0Mzc0IDMxLjg4MTUyNzEsMjUuNTkwMTExNSAzMS42NTA5NDgsMjYuMzQzNjU0NyBaIE0yNC45MjUzMDc4LDMxLjk0Njk3MDQgTDI0LjY5NjE2MjYsMjkuOTYwMTQwNiBDMjYuMTYyOTY5MiwyOS43OTA5NzA4IDI3LjUwMTM4NCwyOS4wODY4NDU5IDI4LjQ3NjM3NDEsMjcuOTk1MzYwOCBMMjkuOTY3OTQ0LDI5LjMyNzczNDQgQzI4LjY2OTMzNzYsMzAuNzgxNTAyNSAyNi44ODMyMTYzLDMxLjcyMTE2MDggMjQuOTI1MzA3OCwzMS45NDY5NzA0IFogTTEuNDU0MTYxNzksMy4zOTk4NDc2MiBMMy4wODk2Mjk0OCw0LjU1MTA0MDY3IEMyLjM4NDExNTk3LDUuNTUzMzQzOTMgMiw2Ljc0NjU0NzI0IDIsOCBMMiw4Ljc3OTIxOTM5IEwwLDguNzc5MjE5MzkgTDAsOCBDMCw2LjMzMTAzNjk0IDAuNTEzMzIyMzQyLDQuNzM2NDcxODMgMS40NTQxNjE3OSwzLjM5OTg0NzYyIFogTTgsLTMuOTY0ODI4NDdlLTEyIEw4LDIgQzYuOTIyNDI2NywyIDUuODg4NjUwMzMsMi4yODM1NTgzOCA0Ljk3OTY2MDQ5LDIuODE0MzI0MTYgTDMuOTcxMTc4OTMsMS4wODcxOTc5NiBDNS4xODQxODA3NiwwLjM3ODkxNzM1NyA2LjU2NTYwOTkxLC0zLjk2NDgyODQ3ZS0xMiA4LC0zLjk2NDgyODQ3ZS0xMiBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1IDQpIi8+CiAgPC9nPgo8L3N2Zz4K" alt=""/>
