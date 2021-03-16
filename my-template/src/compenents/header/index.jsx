@@ -7,7 +7,6 @@ const {Header} = Layout;
 
 function HeaderLayout() {
     return (
-        <>
             <Layout>
                 <Header style={{backgroundColor: 'white',position: 'sticky'}}>
                     <div className="header">
@@ -28,9 +27,6 @@ function HeaderLayout() {
                     </div>
                 </Header>
             </Layout>
-        </>
-
-
     );
 }
 

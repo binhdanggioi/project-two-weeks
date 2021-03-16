@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/alt-text */
-import React from 'react';
+import React, { useState } from 'react';
 import 'antd/dist/antd.css';
 import { Card,Row,Col } from 'antd';
 import './features.scss';
@@ -8,7 +9,7 @@ import './features.scss';
 
 function Features() {
 
-    const data = [
+    const [data, setData] = useState([
         {
             id: 1,
             image:"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjRkZDMTQ4IiByeD0iMyIvPgogICAgPHBhdGggc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0yMS41IDFMMjEuNSAzMU0xMC41IDFMMTAuNSAzMSIvPgogIDwvZz4KPC9zdmc+Cg==",
@@ -37,7 +38,7 @@ function Features() {
             content: "Better control to make the app responsive.",
             description: "See how"
         }
-    ];
+    ]);
 
     const lists = data.map((list) => {
         return (
