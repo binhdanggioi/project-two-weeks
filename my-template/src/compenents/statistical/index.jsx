@@ -1,10 +1,11 @@
-import React from 'react';
+/* eslint-disable no-unused-vars */
+import React, { useState } from 'react';
 import 'antd/dist/antd.css';
 import './statistical.scss';
 
 function Statistical() {
 
-    const data = [
+    const [data, setData] = useState([
         {
             id: 1,
             title: "15+",
@@ -25,7 +26,7 @@ function Statistical() {
             title: "FREE",
             content: "Open source with regular updates",
         },
-    ];
+    ]);
 
     const lists = data.map((list) => {
         return (
@@ -37,11 +38,9 @@ function Statistical() {
     })
 
     return(
-        <>
             <div className="statistical">
                 <div className="statistical__wrap">{lists}</div>
             </div>
-        </>
     );
 }
 

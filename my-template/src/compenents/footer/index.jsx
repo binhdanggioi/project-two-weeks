@@ -4,7 +4,6 @@ import './footer.scss';
 
 function FooterLayout() {
     return(
-        <>
             <div className="footer">
                 <div className="footer__menu">
                     <div className="footer__menu">
@@ -86,7 +85,6 @@ function FooterLayout() {
                     </div>
                 </div>
             </div>
-        </>
     );
 }
 

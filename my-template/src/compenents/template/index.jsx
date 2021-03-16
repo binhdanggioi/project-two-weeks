@@ -4,7 +4,6 @@ import './template.scss'
 
 function Template() {
     return (
-        <>
             <div className="template">
                 <div className="template__intro">
                     <h1>UI Templates are on their way 🚀</h1>
@@ -20,7 +19,6 @@ function Template() {
                     </svg>
                 </div>
             </div>
-        </>
     );
 }
 export default Template;

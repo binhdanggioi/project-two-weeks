@@ -13,9 +13,8 @@ import Consistants from '../consistant';
 
 function Base() {
     return (
-        <>
             <div className="base">
-            <HeaderLayout />
+             <HeaderLayout />
             <Intro />
             <Simulation />
             <Features />
@@ -25,9 +24,6 @@ function Base() {
             <Template />
             <FooterLayout />
             </div>
-        </>
-
-
     );
 }
 

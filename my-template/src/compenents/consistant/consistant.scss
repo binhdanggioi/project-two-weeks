@@ -16,5 +16,9 @@
             color: #505256;
         }
     }
-    
+}
+@media only screen and (max-width: 736px) {
+    .consistants__round{
+        display: none;
+    }
 }

@@ -6,7 +6,6 @@ import {Card} from "antd";
 
 function Tool() {
     return(
-        <>
             <div className="tool">
                 <div className="tool__text">
                     <h2>A combination of tools to design and develop modern applications at ease.</h2>
@@ -43,7 +42,6 @@ function Tool() {
                     </div>
                 </div>
             </div>
-        </>
     );
 }
 

@@ -58,7 +58,6 @@ function Features() {
     })
 
     return(
-        <>
             <div className="features">
                 <span>Key features</span>
                 <p className="features__use">Why use Atomize React?</p>
@@ -67,7 +66,6 @@ function Features() {
                     <Row className="responsive" gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>{lists}</Row>
                 </div>
             </div>
-        </>
     );
 }
 
